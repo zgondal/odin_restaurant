@@ -1,6 +1,7 @@
 import createNav from "./nav.js";
 import createHome from "./home.js";
 import createMenu from "./menu.js";
+import createContact from "./contact.js";
 
 console.log("webpack is running");
 const content = document.querySelector(".content");
@@ -24,7 +25,7 @@ const onPageLoad = () => {
         };
         if (event.target.textContent === "Contact") {
             content.innerHTML = "";
-            // createContact(content);
+            createContact(content);
             console.log("contact button clicked");
         };
     });
