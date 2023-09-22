@@ -1,6 +1,9 @@
 export default function(parent) {
     const nav = document.createElement("nav")
     const ul = document.createElement("ul");
+    const logo = document.createElement("img");
+    logo.src = "./logo.png";
+    nav.appendChild(logo);
     ul.id = "navbar";
     populateList(ul);
     nav.appendChild(ul);
