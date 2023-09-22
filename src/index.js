@@ -1,5 +1,6 @@
 import createNav from "./nav.js";
 import createHome from "./home.js";
+import createMenu from "./menu.js";
 
 console.log("webpack is running");
 const content = document.querySelector(".content");

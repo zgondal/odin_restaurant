@@ -1,6 +1,6 @@
 :root {
     --background-color: rgb(87, 0, 0);
-    --menu-background: rgb(255, 0, 0);
+    --menu-background: rgb(146, 1, 1);
     font-size: 1.5vh;
 }
 
@@ -59,9 +59,15 @@ nav > ul > li > button {
 }
 
 .menu {
+    background: url("./background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
 }
 
 .menu > .category {
@@ -70,6 +76,30 @@ nav > ul > li > button {
     border: 3px solid white;
 }
 
+.menu > .category > h3 {
+    font-size: 2rem;
+}
+
+.menu > .category > h4 {
+    font-size: 2rem;
+}
+
 .menu > .category > .item {
+    display: flex;
     border: 2px solid white;
-}   
+    font-size: 1.5rem;
+    margin: 0 8px;
+}
+
+.menu > .category > .item > img {
+    width: 90%;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+
+.menu > .category > .item > div {
+    align-self: flex-end;
+    padding: 16px;
+}
